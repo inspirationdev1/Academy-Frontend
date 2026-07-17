@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home() {
+function ITTraining() {
   const features = [
     "Experienced Industry Trainers",
     "Practical Hands-on Sessions",
@@ -241,4 +241,4 @@ function Home() {
     </div>
   );
 }
-export default Home;
+export default ITTraining;
