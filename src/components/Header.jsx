@@ -60,20 +60,12 @@ export default function Header() {
             <li className="hover:text-blue-600">Home</li>
           </Link>
 
-          <Link to="/oraclefusion-training">
-            <li className="hover:text-blue-600">Oracle Fusion</li>
+          <Link to="/math">
+            <li className="hover:text-blue-600">Math</li>
           </Link>
 
-          <Link to="/react-training">
-            <li className="hover:text-blue-600">React</li>
-          </Link>
-
-          <Link to="/angular-training">
-            <li className="hover:text-blue-600">Angular</li>
-          </Link>
-
-          <Link to="/dotnet-training">
-            <li className="hover:text-blue-600">DotNet</li>
+          <Link to="/science">
+            <li className="hover:text-blue-600">Science</li>
           </Link>
 
           <Link to="/about">

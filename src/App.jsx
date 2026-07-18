@@ -15,6 +15,8 @@ import OracleFusionTraining from "./pages/OracleFusionTraining";
 import ReactTraining from "./pages/ReactTraining";
 import AngularTraining from "./pages/AngularTraining";
 import DotNetTraining from "./pages/DotnetTraining";
+import Math from "./pages/Math";
+import Science from "./pages/Science";
 
 export default function App() {
   return (
@@ -24,13 +26,8 @@ export default function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/sign-in" element={<SignIn />}></Route>
         <Route path="/sign-up" element={<SignUp />}></Route>
-        <Route
-          path="/oraclefusion-training"
-          element={<OracleFusionTraining />}
-        ></Route>
-        <Route path="/react-training" element={<ReactTraining />}></Route>
-        <Route path="/angular-training" element={<AngularTraining />}></Route>
-        <Route path="/dotnet-training" element={<DotNetTraining />}></Route>
+        <Route path="/math" element={<Math />}></Route>
+        <Route path="/science" element={<Science />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/search" element={<Search />}></Route>
         <Route path="/listing/:listingId" element={<Listing />}></Route>

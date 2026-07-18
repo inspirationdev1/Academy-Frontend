@@ -146,10 +146,10 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
+            {/* <div>
               <h3 className="text-4xl font-bold text-blue-700">500+</h3>
               <p className="mt-2 text-gray-600">Students</p>
-            </div>
+            </div> */}
 
             <div>
               <h3 className="text-4xl font-bold text-blue-700">98%</h3>
