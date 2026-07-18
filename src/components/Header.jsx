@@ -33,7 +33,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/">
           <h1 className="font-bold text-lg md:text-2xl text-slate-700">
-            Inspiration I.T Training
+            Inspiration Academy
           </h1>
         </Link>
 

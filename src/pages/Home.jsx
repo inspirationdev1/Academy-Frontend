@@ -1,244 +1,226 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Home() {
+export default function Home() {
+  const classes = ["Class 8", "Class 9", "Class 10", "Class 11", "Class 12"];
+
   const features = [
-    "Experienced Industry Trainers",
-    "Practical Hands-on Sessions",
-    "Real-Time Project Experience",
-    "Interview Preparation",
-    "Resume Building Assistance",
-    "Mock Interviews",
-    "Flexible Online & Offline Training",
-    "Career Guidance",
-    "Placement Support",
-    "Small Batch Size",
-    "Updated Course Curriculum",
+    {
+      title: "Experienced Faculty",
+      desc: "Learn from highly qualified and experienced Mathematics and Science teachers.",
+    },
+    {
+      title: "Small Batch Size",
+      desc: "Personal attention to every student for better understanding and performance.",
+    },
+    {
+      title: "Regular Tests",
+      desc: "Weekly tests, assignments, and performance analysis to improve results.",
+    },
+    {
+      title: "Doubt Solving",
+      desc: "Dedicated doubt-clearing sessions with one-to-one guidance.",
+    },
+    {
+      title: "Board Exam Preparation",
+      desc: "Complete syllabus coverage with previous years' question paper practice.",
+    },
+    {
+      title: "Progress Reports",
+      desc: "Regular feedback and performance updates shared with parents.",
+    },
   ];
-  const teaching = [
-    "Instructor-led Live Sessions",
-    "Practical Coding Exercises",
-    "Real-world Case Studies",
-    "Assignments After Every Module",
-    "Mini Projects",
-    "Capstone Project",
-    "Interview Questions & Answers",
-    "Resume Preparation",
-    "Live Doubt-Clearing Sessions",
-  ];
-  const who = [
-    "Students",
-    "Fresh Graduates",
-    "Software Developers",
-    "Working Professionals",
-    "Career Switchers",
-    "IT Consultants",
-    "Anyone interested in Oracle Fusion or Frontend Development",
-  ];
-  const values = [
-    "Excellence in Training",
-    "Practical Learning",
-    "Student Success",
-    "Continuous Innovation",
-    "Professional Integrity",
-    "Lifelong Learning",
-    "Industry Relevance",
-  ];
-  const oracle = [
-    "Oracle Fusion HCM",
-    "Oracle ERP Cloud",
-    "Oracle SCM Cloud",
-    "Oracle Financials",
-    "Oracle Integration Cloud (OIC)",
-    "Oracle Visual Builder Cloud Service (VBCS)",
-    "Oracle SQL",
-    "Integration Development",
-    "REST & SOAP Web Services",
-  ];
-  const react = [
-    "JavaScript ES6+",
-    "JSX",
-    "Components",
-    "Props & State",
-    "React Hooks",
-    "Routing",
-    "Forms & Validation",
-    "API Integration",
-    "Redux",
-    "Context API",
-    "Authentication",
-    "Real-Time Projects",
-  ];
-  const angular = [
-    "TypeScript",
-    "Components",
-    "Directives",
-    "Services",
-    "Dependency Injection",
-    "Routing",
-    "Reactive Forms",
-    "RxJS",
-    "HTTP Client",
-    "Authentication",
-    "State Management",
-    "Enterprise Projects",
-  ];
-  const Card = ({ title, color, items }) => (
-    <div className="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-1 transition">
-      <h3 className={`text-2xl font-bold mb-4 ${color}`}>{title}</h3>
-      <ul className="space-y-2 text-gray-600">
-        {items.map((i) => (
-          <li key={i}>✔ {i}</li>
-        ))}
-      </ul>
-    </div>
-  );
+
   return (
     <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 py-16 space-y-16">
-        <section className="text-center">
-          {/* <span className="text-pink-600 font-semibold uppercase">
-            I.T Training
-          </span> */}
-          <h1 className="text-5xl font-bold mt-4">
-            Welcome to{" "}
-            <span className="text-blue-700">Inspiration I.T. Training</span>
-          </h1>
-          <p className="max-w-4xl mx-auto mt-6 text-gray-600 leading-8">
-            Inspiration I.T. Training is a professional IT training institute
-            dedicated to helping students, graduates, job seekers and working
-            professionals build successful careers. We specialize in Oracle
-            Fusion Cloud Technologies, ReactJS and Angular with practical,
-            industry-focused training.
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg">
-              Explore Courses
-            </button>
-            <button className="border border-pink-600 text-pink-600 px-6 py-3 rounded-lg">
-              Contact Us
-            </button>
-          </div>
-        </section>
+      {/* Hero */}
+      <section className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white">
+        <div className="max-w-7xl mx-auto px-6 py-20">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Welcome to
+                <span className="block text-yellow-300">
+                  Inspiration Academy
+                </span>
+              </h1>
 
-        <section className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h2 className="text-3xl font-bold text-blue-700 mb-4">
-              Our Vision
-            </h2>
-            <p className="text-gray-600">
-              To become one of the most trusted IT training institutes by
-              empowering learners with practical technical skills, confidence
-              and career opportunities.
-            </p>
-          </div>
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h2 className="text-3xl font-bold text-pink-600 mb-4">
-              Our Mission
-            </h2>
-            <ul className="space-y-2 text-gray-600">
-              <li>✔ Deliver high-quality training</li>
-              <li>✔ Real-time projects</li>
-              <li>✔ Interview preparation</li>
-              <li>✔ Job-ready skills</li>
-              <li>✔ Modern technologies</li>
-            </ul>
-          </div>
-        </section>
+              <p className="mt-6 text-lg leading-8 text-gray-100">
+                Excellence in Mathematics and Science coaching for students of
+                Classes <strong>8th to 12th</strong>. We help students build
+                strong concepts, improve confidence, and achieve outstanding
+                academic results through practical learning, regular
+                assessments, and expert guidance.
+              </p>
 
-        <section>
-          <h2 className="text-4xl font-bold text-center mb-10">
-            Our Training Programs
-          </h2>
-          <div className="grid lg:grid-cols-3 gap-8">
-            <Card
-              title="Oracle Fusion Cloud"
-              color="text-blue-700"
-              items={oracle}
-            />
-            <Card
-              title="ReactJS Development"
-              color="text-sky-600"
-              items={react}
-            />
-            <Card
-              title="Angular Development"
-              color="text-red-600"
-              items={angular}
-            />
-          </div>
-        </section>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <Link
+                  to="/contact"
+                  className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300"
+                >
+                  Enroll Now
+                </Link>
 
-        <section>
-          <h2 className="text-4xl font-bold text-center mb-10">
-            Why Choose Us?
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {features.map((f) => (
-              <div key={f} className="bg-white rounded-xl p-5 shadow">
-                ✅ {f}
+                <Link
+                  to="/about"
+                  className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700"
+                >
+                  Learn More
+                </Link>
               </div>
-            ))}
-          </div>
-        </section>
+            </div>
 
-        <section className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h2 className="text-3xl font-bold mb-4">Our Teaching Approach</h2>
-            <ul className="space-y-2">
-              {teaching.map((t) => (
-                <li key={t}>📘 {t}</li>
-              ))}
-            </ul>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+                alt="Students Studying"
+                className="rounded-xl shadow-2xl w-full"
+              />
+            </div>
           </div>
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h2 className="text-3xl font-bold mb-4">Who Can Join?</h2>
-            <ul className="space-y-2">
-              {who.map((w) => (
-                <li key={w}>🎓 {w}</li>
-              ))}
-            </ul>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="bg-white rounded-2xl shadow p-8 text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Commitment</h2>
-          <p className="text-gray-600 leading-8">
-            We are committed to helping every learner achieve career success
-            through quality education, practical knowledge and continuous
-            mentorship.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-4xl font-bold text-center mb-8">
-            Our Core Values
+      {/* About */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">
+            Why Choose Inspiration Academy?
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {values.map((v) => (
+
+          <p className="text-gray-600 text-lg leading-8">
+            Our mission is to provide quality education that helps every student
+            understand concepts clearly and perform confidently in school
+            examinations. We combine experienced teaching, regular assessments,
+            and individual attention to create a supportive learning
+            environment.
+          </p>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Features</h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
               <div
-                key={v}
-                className="bg-blue-700 text-white rounded-xl p-5 text-center"
+                key={index}
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6"
               >
-                {v}
+                <h3 className="text-xl font-semibold text-blue-700 mb-3">
+                  {feature.title}
+                </h3>
+
+                <p className="text-gray-600 leading-7">{feature.desc}</p>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="rounded-3xl bg-gradient-to-r from-blue-700 to-pink-600 text-white text-center py-16 px-8">
-          <h2 className="text-5xl font-bold">Your Career Starts Here</h2>
-          <p className="mt-4 text-xl">Learn. Practice. Build. Grow.</p>
-          <p className="max-w-3xl mx-auto mt-6">
-            Whether your goal is to become an Oracle Fusion Consultant, React
-            Developer or Angular Developer, we provide the knowledge, mentorship
-            and practical experience to help you succeed.
+      {/* Courses */}
+      <section className="bg-blue-50 py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Courses Offered
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {classes.map((item) => (
+              <div
+                key={item}
+                className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 text-center"
+              >
+                <h3 className="text-2xl font-bold text-blue-700">{item}</h3>
+
+                <p className="mt-3 text-gray-600">Mathematics & Science</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <h3 className="text-4xl font-bold text-blue-700">500+</h3>
+              <p className="mt-2 text-gray-600">Students</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-blue-700">98%</h3>
+              <p className="mt-2 text-gray-600">Success Rate</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-blue-700">15+</h3>
+              <p className="mt-2 text-gray-600">Years Experience</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-blue-700">100%</h3>
+              <p className="mt-2 text-gray-600">Concept-Based Learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Parents & Students Say
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl shadow p-6">
+              <p className="text-gray-600 italic">
+                "Excellent teaching methods with regular practice tests. My
+                child's confidence in Mathematics has improved significantly."
+              </p>
+
+              <h4 className="mt-4 font-semibold">
+                — Parent of Class 10 Student
+              </h4>
+            </div>
+
+            <div className="bg-white rounded-xl shadow p-6">
+              <p className="text-gray-600 italic">
+                "The Science classes are interactive and easy to understand.
+                Teachers explain every concept with patience."
+              </p>
+
+              <h4 className="mt-4 font-semibold">— Class 12 Student</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-blue-700 text-white py-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold">
+            Start Your Learning Journey Today
+          </h2>
+
+          <p className="mt-5 text-lg text-gray-100">
+            Join Inspiration Academy and receive expert coaching in Mathematics
+            and Science for Classes 8th to 12th with personalized attention and
+            regular assessments.
           </p>
-          <button className="mt-8 bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg">
-            Enroll Today
-          </button>
-        </section>
-      </div>
+
+          <Link
+            to="/contact"
+            className="inline-block mt-8 bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
-export default Home;
