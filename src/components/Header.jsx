@@ -121,7 +121,7 @@ export default function Header() {
             <li className="px-6 py-4 hover:bg-slate-100 border-b">Home</li>
           </Link>
 
-          <Link to="/math-products" onClick={() => setMenuOpen(false)}>
+          <Link to="/math" onClick={() => setMenuOpen(false)}>
             <li className="px-6 py-4 hover:bg-slate-100 border-b">Math</li>
           </Link>
 
