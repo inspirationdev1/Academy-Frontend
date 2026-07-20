@@ -121,22 +121,12 @@ export default function Header() {
             <li className="px-6 py-4 hover:bg-slate-100 border-b">Home</li>
           </Link>
 
-          <Link to="/software-products" onClick={() => setMenuOpen(false)}>
-            <li className="px-6 py-4 hover:bg-slate-100 border-b">
-              Software Products
-            </li>
+          <Link to="/math-products" onClick={() => setMenuOpen(false)}>
+            <li className="px-6 py-4 hover:bg-slate-100 border-b">Math</li>
           </Link>
 
-          <Link to="/custom-software" onClick={() => setMenuOpen(false)}>
-            <li className="px-6 py-4 hover:bg-slate-100 border-b">
-              Custom Software
-            </li>
-          </Link>
-
-          <Link to="/it-training" onClick={() => setMenuOpen(false)}>
-            <li className="px-6 py-4 hover:bg-slate-100 border-b">
-              I.T Training
-            </li>
+          <Link to="/science" onClick={() => setMenuOpen(false)}>
+            <li className="px-6 py-4 hover:bg-slate-100 border-b">Science</li>
           </Link>
 
           <Link to="/about" onClick={() => setMenuOpen(false)}>
